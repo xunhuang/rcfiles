@@ -18,8 +18,19 @@
         },
         "rules": [
           {
-            "description": "gmail mark all aset read",
+            "description": "gmail mark all as read",
             "manipulators": [
+              {
+                "from": {
+                  "key_code": "f4"
+                },
+                "to": [
+                  {
+                    "shell_command": "/usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts.md "
+                  }
+                ],
+                "type": "basic"
+              },
               {
                 "from": {
                   "key_code": "f6"
