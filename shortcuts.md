@@ -10,14 +10,11 @@
 | Report Spam                | !          |
 | Mark All as Read           | F6         |
 | Send                       | ⌘ + Enter |
-| Go to next misspelled word | ⌘ + ;     |
-| Open spelling suggestions  | ⌘ + m     |
 
 
 # Google Doc Shortcuts
 
 | Increase paragraph indentation | **⌘ + ]**      |
-| -------------------------------- | ----------------- |
 | Decrease paragraph indentation | **⌘ + [**      |
 | Clear text formatting          | ⌘ + \          |
 | Insert comment                 | ⌘ + Option + m |
