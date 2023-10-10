@@ -22,11 +22,22 @@
             "manipulators": [
               {
                 "from": {
+                  "key_code": "f3"
+                },
+                "to": [
+                  {
+                    "shell_command": "/bin/bash -p ~/projects/rcfiles/shortcuts.sh "
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
                   "key_code": "f4"
                 },
                 "to": [
                   {
-                    "shell_command": "/usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts.md "
+                    "shell_command": "/bin/bash -p ~/projects/rcfiles/shortcuts.sh "
                   }
                 ],
                 "type": "basic"
