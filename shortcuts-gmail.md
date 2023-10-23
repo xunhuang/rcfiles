@@ -1,5 +1,6 @@
 
 # Gmail Shortcuts
+https://support.google.com/mail/answer/6594
 
 | Action                     | Shortcut   |
 | ---------------------------- | ------------ |

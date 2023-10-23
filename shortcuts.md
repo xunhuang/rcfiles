@@ -1,2 +1,7 @@
 
-# Google Chrome Shortcuts
+# Keyboard Shortcuts 
+
+## Open Finder 
+
+ ⌥ + command ⌘ + spacebar
+

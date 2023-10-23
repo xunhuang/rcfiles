@@ -18,30 +18,77 @@
         },
         "rules": [
           {
-            "description": "gmail mark all as read",
+            "description": "double press right shift to launch shortcuts",
+            "_comment": "for delay and hold_down look at https://karabiner-elements.pqrs.org/docs/json/typical-complex-modifications-examples/",
             "manipulators": [
               {
+                "type": "basic",
                 "from": {
-                  "key_code": "f3"
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
                 },
                 "to": [
                   {
                     "shell_command": "/bin/bash -p ~/projects/rcfiles/shortcuts.sh "
                   }
                 ],
-                "type": "basic"
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "right_shift pressed",
+                    "value": 1
+                  }
+                ]
               },
               {
+                "type": "basic",
                 "from": {
-                  "key_code": "f4"
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
                 },
                 "to": [
                   {
-                    "shell_command": "/bin/bash -p ~/projects/rcfiles/shortcuts.sh "
+                    "set_variable": {
+                      "name": "right_shift pressed",
+                      "value": 1
+                    }
+                  },
+                  {
+                    "key_code": "right_shift"
                   }
                 ],
-                "type": "basic"
-              },
+                "to_delayed_action": {
+                  "to_if_invoked": [
+                    {
+                      "set_variable": {
+                        "name": "right_shift pressed",
+                        "value": 0
+                      }
+                    }
+                  ],
+                  "to_if_canceled": [
+                    {
+                      "set_variable": {
+                        "name": "right_shift pressed",
+                        "value": 0
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "description": "gmail mark all as read",
+            "manipulators": [
               {
                 "from": {
                   "key_code": "f6"
