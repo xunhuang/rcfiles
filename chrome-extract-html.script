@@ -1,0 +1,2 @@
+tell application "Google Chrome" to set sourceHTML to ¬
+    execute front window's active tab javascript "document.documentElement.innerHTML"
