@@ -21,6 +21,10 @@
     fi
   elif [ "$front_app" == "Notes" ]; then
     /usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts-notes.md 
+  elif [ "$front_app" == "Cursor" ]; then
+    /usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts-vscode.md 
+  elif [ "$front_app" == "Visual Studio Code" ]; then
+    /usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts-vscode.md 
   else
     echo "The active application is: $front_app"
     /usr/bin/qlmanage -p ~/projects/rcfiles/shortcuts.md 
